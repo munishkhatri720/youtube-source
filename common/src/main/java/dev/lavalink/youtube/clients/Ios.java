@@ -10,7 +10,7 @@ public class Ios extends StreamingNonMusicClient {
 
     public static ClientConfig BASE_CONFIG = new ClientConfig()
         .withApiKey("AIzaSyB-63vPrdThhKuerbB2N_l7Kwwcxj6yUAc")
-        .withUserAgent(String.format("com.google.ios.youtube/%s (iPhone16,2; U; CPU iOS 18_1_0 like Mac OS X;)", CLIENT_VERSION))
+        .withUserAgent(String.format("com.google.ios.youtube/%s (iPhone16,2; U; CPU iOS 18_1_0 like Mac OS X)", CLIENT_VERSION))
         .withClientName("IOS")
         .withClientField("clientVersion", CLIENT_VERSION)
         .withUserField("lockedSafetyMode", false);
