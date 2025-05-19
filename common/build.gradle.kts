@@ -16,6 +16,8 @@ dependencies {
 
     implementation(libs.rhino.engine)
     implementation(libs.nanojson)
+    implementation("com.google.protobuf:protobuf-java:4.31.0-RC1")
+    
     compileOnly(libs.slf4j)
     compileOnly(libs.annotations)
 

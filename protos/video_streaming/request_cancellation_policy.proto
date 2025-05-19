@@ -1,0 +1,16 @@
+syntax = "proto2";
+package video_streaming;
+
+option java_package = "dev.lavalink.youtube.protos";
+
+message RequestCancellationPolicy {
+  message Item {
+    optional int32 fR = 1;
+    optional int32 NK = 2;
+    optional int32 minReadaheadMs = 3;
+  }
+
+  optional int32 N0 = 1;
+  repeated Item items = 2;
+  optional int32 jq = 3;
+}

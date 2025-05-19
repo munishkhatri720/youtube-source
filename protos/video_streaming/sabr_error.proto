@@ -1,0 +1,9 @@
+syntax = "proto2";
+package video_streaming;
+
+option java_package = "dev.lavalink.youtube.protos";
+
+message SabrError {
+  optional string type = 1;
+  optional int32 code = 2;
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+package video_streaming;
+
+option java_package = "dev.lavalink.youtube.protos";
+
+message TimeRange {
+  optional int64 start = 1;
+  optional int64 duration = 2;
+  optional int32 timescale = 3;
+}
