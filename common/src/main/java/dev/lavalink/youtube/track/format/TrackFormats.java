@@ -36,6 +36,11 @@ public class TrackFormats {
                 continue;
             }
 
+            if (format.isAutoDubbed()) {
+                // skip auto dubbed formats
+                continue;
+            }
+            
             if (isBetterFormat(format, bestFormat)) {
                 bestFormat = format;
             }

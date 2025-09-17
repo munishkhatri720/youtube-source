@@ -109,7 +109,8 @@ public abstract class ThumbnailStreamingNonMusicClient extends ThumbnailNonMusic
                 cipherInfo.get("s"),
                 cipherInfo.getOrDefault("sp", DEFAULT_SIGNATURE_KEY),
                 formatJson.get("audioTrack").get("audioIsDefault").asBoolean(true),
-                formatJson.get("isDrc").asBoolean(false)
+                formatJson.get("isDrc").asBoolean(false),
+                formatJson.get("audioTrack").get("isAutoDubbed").asBoolean(false)
             ));
 
             return true;

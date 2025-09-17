@@ -290,7 +290,7 @@ public class SignatureCipherManagerTest {
                 testCase.signature,
                 "sig",
                 true,
-                false);
+                false , false);
     }
 
     /**

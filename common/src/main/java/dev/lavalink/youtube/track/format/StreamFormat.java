@@ -23,6 +23,7 @@ public class StreamFormat {
   private final String signatureKey;
   private final boolean defaultAudioTrack;
   private final boolean isDrc;
+  private final boolean isAutoDubbed;
 
   /**
    * @param type Mime type of the format
@@ -35,6 +36,7 @@ public class StreamFormat {
    * @param signatureKey The key to use for deciphered signature in the final playback URL
    * @param isDefaultAudioTrack Whether this format contains an audio track that is used by default.
    * @param isDrc Whether this format has Dynamic Range Compression.
+   * @param isAutoDubbed Whether this format is auto dubbed.
    */
   public StreamFormat(
       ContentType type,
@@ -47,7 +49,8 @@ public class StreamFormat {
       String signature,
       String signatureKey,
       boolean isDefaultAudioTrack,
-      boolean isDrc
+      boolean isDrc,
+      boolean isAutoDubbed
   ) {
     this.info = FormatInfo.get(type);
     this.type = type;
@@ -61,6 +64,7 @@ public class StreamFormat {
     this.signatureKey = signatureKey;
     this.defaultAudioTrack = isDefaultAudioTrack;
     this.isDrc = isDrc;
+    this.isAutoDubbed = isAutoDubbed;
   }
 
   /**
@@ -152,6 +156,13 @@ public class StreamFormat {
    */
   public boolean isDrc() {
     return isDrc;
+  }
+
+  /**
+   * @return Whether this format is auto dubbed.
+   */
+  public boolean isAutoDubbed() {
+    return isAutoDubbed;
   }
 
   @Override
